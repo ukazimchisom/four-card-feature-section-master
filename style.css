@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+/* custom properties */
+
+:root {
+    /* colors-primary */
+    --red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    
+    /* colors-Neutral */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+
+    --Fs: 15px;
+    --ff: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    color: var(--Grayish-Blue);
+    font-family: var(--ff);
+    font-size: var(--Fs);
+    
+   
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+
+}
+
+header {
+    text-align: center;
+  }
+
+  header h2 {
+    font-size: 34px;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+  }
+  
+  header h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+  }
+
+  header p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 60px;
+    
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    text-align: right;
+  }
+  
+
+.box-text {
+    text-align: left;
+    padding-bottom: 50px;
+  }
+
+.box-merg {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.box-super {
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+    border-top: 4px solid var(--Cyan);
+    border-radius: 5px;
+}
+
+.box-build {
+    border-top: 4px solid var(--red);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+}
+
+.box-karm {
+    border-top: 4px solid var(--Orange);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+
+}
+
+.box-calc {
+    border-top: 4px solid var(--Blue);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+}
+.box-text h4 {
+    font-size: 20px;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+  }
+
+  .box-super,
+   .box-calc {
+    align-self: center;
+  }
+
+
+  @media only screen and (max-width: 680px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+
+    .box {
+        padding: 20px;
+      }
+    
+  }
+
+  
